@@ -1,0 +1,81 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.header.scrolled {
+  background-color: rgba(253, 251, 247, 0.95);
+  padding: 1rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  transition: color 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.header.scrolled .logo {
+  color: var(--color-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.header.scrolled .nav-links a {
+  color: var(--color-text);
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+.nav-links .btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links .btn-primary:hover {
+  background-color: #c9654d;
+  transform: translateY(-2px);
+  color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}

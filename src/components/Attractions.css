@@ -1,0 +1,77 @@
+.attractions-section {
+  padding: 6rem 2rem;
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+.attractions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.attractions-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.attractions-header h2 {
+  font-size: 3rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.attractions-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.attractions-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.attractions-list-wrapper {
+  padding: 2rem;
+  background-color: var(--color-base);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.attractions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attraction-item {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.attraction-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.attraction-item h3 {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.attraction-item p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .attractions-content {
+    grid-template-columns: 1fr;
+  }
+}
