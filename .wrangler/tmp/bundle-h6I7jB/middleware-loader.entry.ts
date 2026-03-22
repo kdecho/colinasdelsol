@@ -3,12 +3,12 @@
 // export dynamically through wrangler, or we can potentially let users directly
 // add them as a sort of "plugin" system.
 
-import ENTRY, { __INTERNAL_WRANGLER_MIDDLEWARE__ } from "C:\\Users\\Elie\\Downloads\\Github Repos\\Colinas Del sol\\.wrangler\\tmp\\bundle-Bly15d\\middleware-insertion-facade.js";
+import ENTRY, { __INTERNAL_WRANGLER_MIDDLEWARE__ } from "C:\\Users\\Elie\\Downloads\\Github Repos\\Colinas Del sol\\.wrangler\\tmp\\bundle-h6I7jB\\middleware-insertion-facade.js";
 import { __facade_invoke__, __facade_register__, Dispatcher } from "C:\\Users\\Elie\\Downloads\\Github Repos\\Colinas Del sol\\node_modules\\wrangler\\templates\\middleware\\common.ts";
-import type { WorkerEntrypointConstructor } from "C:\\Users\\Elie\\Downloads\\Github Repos\\Colinas Del sol\\.wrangler\\tmp\\bundle-Bly15d\\middleware-insertion-facade.js";
+import type { WorkerEntrypointConstructor } from "C:\\Users\\Elie\\Downloads\\Github Repos\\Colinas Del sol\\.wrangler\\tmp\\bundle-h6I7jB\\middleware-insertion-facade.js";
 
 // Preserve all the exports from the worker
-export * from "C:\\Users\\Elie\\Downloads\\Github Repos\\Colinas Del sol\\.wrangler\\tmp\\bundle-Bly15d\\middleware-insertion-facade.js";
+export * from "C:\\Users\\Elie\\Downloads\\Github Repos\\Colinas Del sol\\.wrangler\\tmp\\bundle-h6I7jB\\middleware-insertion-facade.js";
 
 class __Facade_ScheduledController__ implements ScheduledController {
 	readonly #noRetry: ScheduledController["noRetry"];
