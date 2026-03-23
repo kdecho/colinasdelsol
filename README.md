@@ -23,9 +23,22 @@ npm install
 npm run dev
 `
 
-## Deployment
+## Deployment (GitHub Integration)
 
-Deployed on Cloudflare Pages with Workers API and D1 database.
+Deployment is handled automatically via GitHub integration with Cloudflare Pages. **No API keys are required.**
+
+1. Push your repository to GitHub.
+2. In the **Cloudflare Dashboard**, go to **Workers & Pages** -> **Create application** -> **Pages** -> **Connect to Git**.
+3. Select this repository. Use these build settings:
+   - **Framework preset**: `Create React App` or `None`
+   - **Build command**: `npm run build`
+   - **Build output directory**: `dist`
+4. **Database Binding**: Before deploying natively, ensure your page has access to your D1 database.
+   - Go to your Pages project -> **Settings** -> **Bindings** -> **Add binding**.
+   - Create a **D1 DB** binding with the Variable name: `DB`.
+   - Select your database (`colinas-del-sol-db`).
+
+Future `git push` events to your main branch will now deploy automatically.
 
 ## React Compiler
 
