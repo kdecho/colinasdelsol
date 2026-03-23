@@ -22,7 +22,7 @@ function Attractions() {
 
         <div className="attractions-content">
           <div className="attractions-image">
-            <img src={batrounImg} alt="The Phoenician Sea Wall in Batroun" />
+            <img src={batrounImg} alt="The Phoenician Sea Wall in Batroun" loading="lazy" />
           </div>
 
           <div className="attractions-list-wrapper">

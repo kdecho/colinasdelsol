@@ -31,14 +31,14 @@ function About() {
             </p>
           </div>
           <div className="about-image">
-            <img src={interiorImg} alt="Chalet Interior" />
+            <img src={interiorImg} alt="Chalet Interior" loading="lazy" />
           </div>
         </div>
 
         {/* Amenities Section */}
         <div className="amenities-wrapper" id="amenities">
           <div className="amenities-image">
-             <img src={poolImg} alt="Private Plunge Pool" />
+             <img src={poolImg} alt="Private Plunge Pool" loading="lazy" />
           </div>
           <div className="amenities-content">
             <h2>Amenities</h2>

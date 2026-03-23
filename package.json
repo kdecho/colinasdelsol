@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cf-dev": "wrangler pages dev --compatibility-date=2024-03-22",
+    "cf-deploy": "wrangler pages deploy dist"
   },
   "dependencies": {
     "react": "^19.2.4",
