@@ -4,5 +4,5 @@ compatibility_date = "2024-03-22"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "colinas-del-sol-db"
-database_id = "" # Add your D1 database ID here
+database_name = "bookings-db"
+database_id = "14785cbc-feac-416e-9e1b-6992cfdf6f2e" # Add your D1 database ID here
